@@ -13,7 +13,7 @@ TIER=1
 while [[ ${READ} == 1 ]]
 do echo ""; echo " ** tier : $TIER **"; echo ""
 
- bash parserun_mireap ${CHR} ${STR}
+ bash 04.02.PARSE--parseRun.bash ${CHR} ${STR}
  cat parse.map.iSTR.txt >> xCHANGES
 
  PAT1=`awk '{ print $1 }' parse.map.iSTR.txt`
@@ -23,7 +23,7 @@ do echo ""; echo " ** tier : $TIER **"; echo ""
  awk -v "p2=${PAT2}" -v "p3=${PAT3}" '{ if( ($3==p2) && ($4==p3) ) { print "#"$0 } else { print $0 } }' tmp.map.${CHR}.iSTR.txt > XXX
  mv XXX tmp.map.${CHR}.iSTR.txt
 
- bash checkRun tmp.map.${CHR}.iSTR.txt
+ bash 04.03.PARSE--checkRun.bash tmp.map.${CHR}.iSTR.txt
 
  if [[ $? != 0 ]]
  then
