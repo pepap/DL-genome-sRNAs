@@ -3,9 +3,13 @@
 ## miRNA annotation
 The PERL program miREAP was used for miRNA annotation : miREAP ( https://github.com/liqb/mireap ).
 
-All the scripts used for the annotation :
+All scripts used for annotation can be found here :
 
 - [miRNAs](https://github.com/pepap/DL-genome-sRNAs/tree/main/miRNAs)
 
 ## piRNA annotation
-novel piRNA search : PiCB ( https://github.com/HaaseLab/PICB )
+The R library PiCB was used for the identification of piRNA clusters : PiCB ( https://github.com/HaaseLab/PICB ).
+
+You can find all used scripts here :
+
+- [piRNAs](https://github.com/pepap/DL-genome-sRNAs/tree/main/piRNAs)
