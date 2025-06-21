@@ -1,6 +1,6 @@
 #!/bin/bash
 
-metamodule add samtools
+metamodule add samtools-1.9
 
 #Test if bam file has NM and NH tags using samtools package
 # @pepap : input is a single BAM file
