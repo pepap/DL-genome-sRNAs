@@ -1,6 +1,6 @@
 #!/bin/bash
 
-metamodule add samtools
+metamodule add samtools-1.9
 
 #Test if bam file is coordinate-sorted using samtools package
 # @pepap : input is a single BAM file
