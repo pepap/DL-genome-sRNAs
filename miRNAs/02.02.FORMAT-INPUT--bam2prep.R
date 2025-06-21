@@ -2,11 +2,11 @@ library(data.table)
 library(Biostrings)
 library(GenomicAlignments)
 
-#> input BAM file
+# @pepap : input BAM file
 BAMFILE="/PATH/TO/MAPPED/BAM/all-DL.se.Aligned.sortedByCoord.out.bam"
-#> selected read length 21-23nt
+# @pepap : selected read length 21-23nt
 RLRAN=c(21,23)
-#> only reads with the minimal frequency MINRFREQ were used
+# @pepap : only reads with the minimal frequency MINRFREQ were used
 MINRFREQ=50
 #TABDELIMINATOR="\t"
 #TABDELIMINATOR=" "
