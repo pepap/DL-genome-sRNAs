@@ -9,3 +9,5 @@ FAS="/PATH/TO/all.smrna.fa"
 MAP="/PATH/TO/all.map.txt"
 REF="/PATH/TO/INPUT/GENOMIC/FASTA"
 EXE="/PATH/TO/MIREAP/mireap_0.2/bin/mireap.pl"
+
+${EXE} -i ${FAS} -m ${MAP} -r ${REF} -o ODIR.SUCC -t DerLae
