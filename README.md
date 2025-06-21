@@ -13,6 +13,9 @@ Input sequencing files are required in a specific collapsed-fasta format, with m
 ### 02. Extract input `smrna.fa` and `map.txt`
 The required input files for the miREAP PERL script are extracted in R. All the steps are summarized in the BASH script `02.01.FORMAT-INPUT--run.bash`.
 
+### 03. miREAP run
+Custom miREAP run : `03.MIREAP--run.bash`. The resulting GFF3 file was manually curated.
+
 ## piRNA annotation
 The R library PiCB was used for the identification of piRNA clusters : [PiCB](https://github.com/HaaseLab/PICB)
 
