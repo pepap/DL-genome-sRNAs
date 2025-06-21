@@ -22,3 +22,6 @@ The R library PiCB was used for the identification of piRNA clusters : [PiCB](ht
 You can find all used scripts here :
 
 - [piRNAs](https://github.com/pepap/DL-genome-sRNAs/tree/main/piRNAs)
+
+### Check the input BAM format
+Input BAM files are required to contain NM and NH tags and must be coordinate-sorted.
