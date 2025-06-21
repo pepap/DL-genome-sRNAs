@@ -1,6 +1,6 @@
 # DL-genome-sRNAs
 
-## miRNA annotation
+## <ins>miRNA annotation</ins>
 The PERL program miREAP was used for miRNA annotation : [miREAP](https://github.com/liqb/mireap)
 
 All scripts used for annotation can be found here :
