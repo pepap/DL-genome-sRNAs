@@ -2,10 +2,11 @@ library(data.table)
 library(Biostrings)
 library(GenomicAlignments)
 
-STOR="/storage/brno12-cerit/home/pepap/brno1/TobiasBer/10.DLgenome-CZ-1.0/BAM.smallRNAseq/00.stats/04.mireap/01.merge_input_reads/"
-BAMFILES="03.all-DL/all-DL.se.Aligned.sortedByCoord.out.bam"
-
+#> input BAM file
+BAMFILE="/PATH/TO/MAPPED/BAM/all-DL.se.Aligned.sortedByCoord.out.bam"
+#> selected read length 21-23nt
 RLRAN=c(21,23)
+#> only reads with the minimal frequency MINRFREQ were used
 MINRFREQ=50
 #TABDELIMINATOR="\t"
 #TABDELIMINATOR=" "
@@ -49,7 +50,7 @@ gr2map  <- function( igr ) {
 #<<<
 
 cat( "\n >> reading BAM file ...\n",sep="" )
-tmp.ga <- readGAlignments( file=paste0(STOR,BAMFILES),param=ScanBamParam( what=c("qname","seq"),tag=c("HI","NH","nM") ) )
+tmp.ga <- readGAlignments( file=BAMFILE,param=ScanBamParam( what=c("qname","seq"),tag=c("HI","NH","nM") ) )
 tmp.ga <- tmp.ga[ njunc(tmp.ga)==0 ]
 
 cat( " >> converting GAlignment to GRanges ...\n",sep="" )
@@ -64,4 +65,3 @@ writeXStringSet( x=tmp.ofas,filepath="all.smrna.fa",compress=F,format="FASTA",ap
 cat( " >> formatting map file ...\n",sep="" )
 tmp.omap <- gr2map(  igr=tmp.gr )
 fwrite( x=tmp.omap,file="all.map.txt",sep="\t",quote=F,row.names=F,col.names=F,append=F )
-
