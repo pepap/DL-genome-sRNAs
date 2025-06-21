@@ -7,6 +7,8 @@ All scripts used for annotation can be found here :
 
 - [miRNAs](https://github.com/pepap/DL-genome-sRNAs/tree/main/miRNAs)
 
+### 01. Input file preparation
+
 ## piRNA annotation
 The R library PiCB was used for the identification of piRNA clusters : PiCB ( https://github.com/HaaseLab/PICB ).
 
