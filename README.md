@@ -16,7 +16,7 @@ The required input files for the miREAP PERL script are extracted in R. All the 
 ### 03. miREAP run
 Custom miREAP run : `03.MIREAP--run.bash`. The resulting GFF3 file was manually curated.
 
-## piRNA annotation
+## <ins>piRNA annotation</ins>
 The R library PiCB was used for the identification of piRNA clusters : [PiCB](https://github.com/HaaseLab/PICB)
 
 You can find all used scripts here :
