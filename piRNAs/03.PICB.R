@@ -17,8 +17,8 @@ library(PICB)
 # @pepap : generate the actual date in the text format "YYYYMMDD"
 pepDate <- function() { return( format(Sys.time(), "%Y%m%d") ) }
 
-INPUT_GENOME_FASTA="/storage/brno12-cerit/home/pepap/brno1/TobiasBer/06.Mexico-genoma/26-Genoma/derLae1_hic.FINAL.fasta"
-STOR="/storage/brno12-cerit/home/pepap/brno1/TobiasBer/08.DL.new.20241117/UNCOLLAPSED_BAMS/"
+INPUT_GENOME_FASTA="/PATH/TO/INPUT/GENOMIC/FASTA"
+STOR="/PATH/TO/BAM/FILES/"
 SUFF=".se.sortCrd.bam"
 #!#SUFF=".se.Aligned.sortedByCoord.out.bam"
 # @pepap : BAM root name. The expected full path of a individual BAM file : STOR,BAMS[i],SUFF
