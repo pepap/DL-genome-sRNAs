@@ -7,11 +7,11 @@ All scripts used for annotation can be found here :
 
 - [miRNAs](https://github.com/pepap/DL-genome-sRNAs/tree/main/miRNAs)
 
-### 01. Input file preparation
+### 01. Input file preparation : merge & map
 Input sequencing files are required in a specific collapsed-fasta format, with more details available in [miREAP](https://github.com/liqb/mireap). [FASTX-Toolkit](http://hannonlab.cshl.edu/fastx_toolkit/download.html) software was used to format the files. The collapsed-fasta files were then mapped using [STAR](https://github.com/alexdobin/STAR/releases/tag/2.7.7a) software. All of these steps are summarized in the BASH script `01.PREP-INPUT--map.bash`.
 
 ### 02. Extract input `smrna.fa` and `map.txt`
-
+The required input files for the miREAP PERL script are extracted in R. All the steps are summarized in the BASH script `02.01.FORMAT-INPUT--run.bash`.
 
 ## piRNA annotation
 The R library PiCB was used for the identification of piRNA clusters : [PiCB](https://github.com/HaaseLab/PICB)
